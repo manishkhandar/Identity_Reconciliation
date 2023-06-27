@@ -42,3 +42,10 @@ response:
     }
 }
 ```
+
+## To run the server on localhost
+* Close the repository
+* Run `npm i` to install dependency
+* Create a __.env__ file in the root directory
+* Add `CONNECTION_STRING = postgres://username:password@localhost:5432/mydatabase` to .env file
+* Run `npm start` to start the server
