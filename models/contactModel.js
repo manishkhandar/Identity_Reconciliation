@@ -3,7 +3,9 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 // MySQL connection configuration
-const sequelize = new Sequelize(process.env.CONNECTION_STRING);
+const sequelize = new Sequelize(process.env.CONNECTION_STRING, {
+  dialect: 'postgres'
+});
 
 // Define the Contact model
 const Contact = sequelize.define(
