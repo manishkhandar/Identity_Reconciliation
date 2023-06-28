@@ -2,8 +2,13 @@
  Identify and keep track of a customer's identity across multiple purchases.
 
 ## API Call and Request Example
-to add order (contact)
+ ### To add order (contact):`/add-contact`
 
+- **Description**: Add contact details.
+- **Method**: POST
+- **Parameters**:
+  - `email` (optional): email.
+  - `phoneNumber` (optional): phoneNumber.
 
 ```javascript
 curl --location 'https://identity-al5n.onrender.com/add-contact/' \
@@ -21,7 +26,13 @@ response:
 }
 ```
 
-to identify 
+ ### To identify  (contact):`/identify`
+
+- **Description**: Identify contact details.
+- **Method**: POST
+- **Parameters**:
+  - `email` (optional): email.
+  - `phoneNumber` (optional): phoneNumber.
 
 ```javascript
 curl --location 'https://identity-al5n.onrender.com/identify/' \
